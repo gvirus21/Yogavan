@@ -76,7 +76,7 @@ export const SideBtnWrap = styled.div`
 export const SidebarRoute = styled(LinkR)`
   border-radius: 3em;
   text-transform: uppercase;
-  background-color: crimson;
+  background: linear-gradient(45deg, crimson, orangered);
   white-space: nowrap;
   padding: 1em 3em;
   color: #fff;

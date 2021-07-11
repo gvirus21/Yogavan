@@ -15,7 +15,7 @@ import {
 
 const Navbar = ({ toggle }) => {
   return (
-    <div>
+    <>
       <Nav>
         <NavContainer>
           <NavLogo to="/">
@@ -26,21 +26,21 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks>About</NavLinks>
+              <NavLinks to="about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Discover</NavLinks>
+              <NavLinks to="discover">Discover</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Services</NavLinks>
+              <NavLinks to="services">Services</NavLinks>
             </NavItem>
             <NavBtn>
-              <NavBtnLink>Sign up</NavBtnLink>
+              <NavBtnLink to="/signup">Sign up</NavBtnLink>
             </NavBtn>
           </NavMenu>
         </NavContainer>
       </Nav>
-    </div>
+    </>
   );
 };
 

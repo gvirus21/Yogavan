@@ -5,40 +5,39 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #fff;
-  height: 7em;
+  height: 5em;
   width: 100%;
-  margin-top: -80px;
+  margin-top: -5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1em;
   position: sticky;
   top: 0;
   z-index: 10;
-  margin: 0;
   text-align: center;
 `;
 
 export const NavContainer = styled.div`
-  height: 3em;
-  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s all ease;
+  height: 5em;
+  width: 90%;
+  z-index: 1;
+  padding: 0 24px;
+  max-width: 1100px;
 
-  @media screen and (max-width: 760px) {
-    width: 90%;
-  }
+  transition: 0.3s all ease;
 `;
 
 export const NavLogo = styled.div`
-  width: 10em;
+  width: 8em;
 `;
 
 export const Logo = styled.svg`
   background-image: url(${logo});
-  height: 2.3em;
+  height: 2em;
   background-repeat: no-repeat;
 `;
 
@@ -48,10 +47,10 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 700px) {
     display: block;
     position: absolute;
-    top: 0.8em;
+    top: 0.1em;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
     color: crimson;
     transition: color 0.2s ease-in;
@@ -102,13 +101,13 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  background-color: crimson;
+  background: linear-gradient(45deg, crimson, orangered);
   padding: 1em 1.5em;
   color: white;
   border-radius: 3em;
   white-space: nowrap;
   text-decoration: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
 
   font-size: 0.8em;
