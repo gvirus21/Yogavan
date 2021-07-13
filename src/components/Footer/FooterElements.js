@@ -18,7 +18,7 @@ export const FooterMain = styled.div`
 export const FooterElephant = styled.div`
   height: 18em;
   width: 60vw;
-
+  margin-top: 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
