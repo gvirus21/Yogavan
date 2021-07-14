@@ -4,8 +4,8 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: transparent;
-  color: #fff;
+  background: ${({ isScrolled }) => (isScrolled ? "#fff" : "transparent")};
+  color: ${({ isScrolled }) => (isScrolled ? "#000" : "#fff")};
   height: 5em;
   width: 100%;
   margin-top: -5em;
@@ -17,6 +17,8 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   text-align: center;
+
+  transition: 0.2s all ease;
 `;
 
 export const NavContainer = styled.div`

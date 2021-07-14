@@ -13,10 +13,10 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, isScrolled }) => {
   return (
     <>
-      <Nav>
+      <Nav isScrolled={isScrolled}>
         <NavContainer>
           <NavLogo to="/">
             <Logo />
