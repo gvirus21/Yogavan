@@ -8,20 +8,23 @@ import {
   InfoDesc,
 } from "./InfoSectionElements";
 
-const InfoSection = () => {
+const InfoSection = ({
+  id,
+  imgStart,
+  lightBg,
+  darkText,
+  headline,
+  description,
+  img,
+}) => {
   return (
     <>
-      <InfoBody>
-        <InfoContainer>
-          <InfoImg />
+      <InfoBody id={id} lightBg={lightBg}>
+        <InfoContainer imgStart={imgStart}>
+          <InfoImg src={img} />
           <InfoTextContainer>
-            <InfoHeading>About Us</InfoHeading>
-            <InfoDesc>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              temporibus ad repellat, laudantium ullam cum cumque sequi delectus
-              sapiente rem architecto, corrupti libero dolore numquam, saepe
-              aut? Incidunt, explicabo placeat!
-            </InfoDesc>
+            <InfoHeading darkText={darkText}>{headline}</InfoHeading>
+            <InfoDesc darkText={darkText}>{description}</InfoDesc>
           </InfoTextContainer>
         </InfoContainer>
       </InfoBody>

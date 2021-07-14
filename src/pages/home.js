@@ -4,6 +4,16 @@ import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import Footer from "../components/Footer";
+import img1 from "../images/img-1.jpg";
+import img2 from "../images/img-2.jpg";
+import img3 from "../images/img-3.jpg";
+
+import {
+  InfoSectionAbout,
+  InfoSectionDiscover,
+  InfoSectionServices,
+} from "../components/InfoSection/Data";
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,7 +40,9 @@ const Home = () => {
       <Navbar toggle={toggle} isScrolled={isScrolled} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroSection />
-      <InfoSection />
+      <InfoSection img={img1} {...InfoSectionAbout} />
+      <InfoSection img={img2} {...InfoSectionDiscover} />
+      <InfoSection img={img3} {...InfoSectionServices} />
       {/* <InfoSection />
       <InfoSection /> */}
       <Footer />

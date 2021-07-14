@@ -64,5 +64,6 @@ export const FooterLinks = styled(LinkR)`
 export const CopyRightMessage = styled.p`
   color: #777;
   font-size: 0.8em;
-  margin: 5em;
+  margin-top: 2em;
+  margin-bottom: 5em;
 `;

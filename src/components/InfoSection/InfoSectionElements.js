@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoBody = styled.div`
   height: 30em;
   width: 100vw;
-  background-color: #fff;
+  background-color: ${({ lightBg }) => (lightBg ? "fff" : "crimson")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,8 @@ export const InfoContainer = styled.div`
   height: 25em;
   width: 80%;
   max-width: 1200px;
-  /* background-color: pink; */
   display: flex;
+  flex-direction: ${({ imgStart }) => (imgStart ? "row" : "row-reverse")};
   justify-content: space-between;
   align-items: center;
 
@@ -30,9 +30,13 @@ export const InfoContainer = styled.div`
 
 export const InfoImg = styled.img`
   height: 20em;
-  width: 20em;
 
+  border-radius: 2em;
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.8);
   background-color: orangered;
+  @media screen and (max-width: 700px) {
+    height: 15em;
+  }
 `;
 
 export const InfoTextContainer = styled.div`
@@ -52,11 +56,15 @@ export const InfoTextContainer = styled.div`
 
 export const InfoHeading = styled.h1`
   font-size: 2em;
+  color: ${({ darkText }) => (darkText ? "#000" : "#fff")};
 `;
 
 export const InfoDesc = styled.p`
   font-size: 1.2em;
   margin: 2em;
+  max-width: 30em;
+  color: ${({ darkText }) => (darkText ? "#000" : "#fff")};
+
   text-align: center;
   font-weight: 300;
 `;
