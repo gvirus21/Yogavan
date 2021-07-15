@@ -62,6 +62,7 @@ export const HeroH1 = styled.h1`
   font-size: 2.5em;
   text-align: center;
   font-family: Poppins;
+  text-transform: capitalize;
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
