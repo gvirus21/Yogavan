@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
-export const HeroButton = styled.div`
+export const HeroButton = styled(LinkR)`
   padding: 1em 3em;
   background: linear-gradient(45deg, crimson, orangered);
   display: flex;
