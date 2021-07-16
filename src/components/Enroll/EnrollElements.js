@@ -42,7 +42,6 @@ export const EnrollBg = styled.div`
 export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
-  /* background-size: cover; */
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
@@ -69,16 +68,20 @@ export const H1 = styled.h1`
 
 export const EnrollForm = styled.div`
   width: 30em;
-  height: 20em;
-  padding: 4em;
-  border-radius: 1em;
-  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
-  background-color: whitesmoke;
+  height: 15em;
+  background-color: #fff;
+  padding: 2em;
 
+  border-radius: 1.5em;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+  @media screen and (max-width: 700px) {
+    width: 20em;
+  }
 `;
 
 export const EnrollInput = styled.input`
@@ -88,9 +91,12 @@ export const EnrollInput = styled.input`
   font-size: 1.2em;
   border: 2px solid #777;
   outline: none;
-
   &:focus {
     border: 2px solid orangered;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 12em;
   }
 `;
 
