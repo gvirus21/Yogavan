@@ -21,6 +21,11 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    height: 40em;
+    width: 22em;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -30,6 +35,11 @@ export const FormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 700px) {
+    height: 30em;
+    width: 22em;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -38,6 +48,13 @@ export const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    height: 5em;
+    width: 20em;
+    margin: 0.5em 0;
+    flex-direction: column;
+  }
 `;
 
 export const Input = styled.input`
