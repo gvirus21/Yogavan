@@ -23,7 +23,7 @@ export const InfoContainer = styled.div`
   align-items: center;
 
   @media screen and (max-width: 700px) {
-    height: 45em;
+    height: 40em;
     flex-direction: column;
   }
 `;
@@ -34,6 +34,7 @@ export const InfoImg = styled.img`
   border-radius: 2em;
   box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.8);
   background-color: orangered;
+
   @media screen and (max-width: 700px) {
     height: 15em;
   }
@@ -57,6 +58,7 @@ export const InfoTextContainer = styled.div`
 export const InfoHeading = styled.h1`
   font-size: 2em;
   color: ${({ darkText }) => (darkText ? "#000" : "#fff")};
+  text-align: center;
 `;
 
 export const InfoDesc = styled.p`
@@ -67,4 +69,8 @@ export const InfoDesc = styled.p`
 
   text-align: center;
   font-weight: 300;
+
+  @media screen and (max-width: 550px) {
+    width: 15em;
+  }
 `;
