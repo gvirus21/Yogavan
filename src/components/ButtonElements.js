@@ -11,6 +11,7 @@ export const HeroButton = styled(LinkR)`
   font-size: 1.2em;
   border-radius: 2em;
   transition: 0.2s all ease-in-out;
+  text-decoration: none;
 
   &:hover {
     transform: translateY(-3px);
