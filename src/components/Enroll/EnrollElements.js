@@ -68,7 +68,7 @@ export const H1 = styled.h1`
 
 export const EnrollForm = styled.div`
   width: 30em;
-  height: 15em;
+  height: 20em;
   background-color: #fff;
   padding: 2em;
 
@@ -80,6 +80,7 @@ export const EnrollForm = styled.div`
   justify-content: space-around;
 
   @media screen and (max-width: 700px) {
+    height: 15em;
     width: 20em;
   }
 `;
